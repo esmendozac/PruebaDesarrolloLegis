@@ -1,0 +1,78 @@
+
+<h1 class="text-center">Registro de votantes</h1>
+<br />
+<form>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Nombres">Nombres</label>
+        <input type="text" ng-model="registro.votante.Nombres" class="form-control" id="Nombres" placeholder="Nombres">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" ng-model="registro.votante.Apellidos" class="form-control" id="Apellidos" placeholder="Apellidos">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="TipoIdentificación">Tipo de identificación</label>
+        <input type="text" ng-model="registro.votante.TipoIdentificacion" class="form-control" id="TipoIdentificacion" placeholder="Tipo de identificación">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Identificacion">Identificación</label>
+        <input type="text" ng-model="registro.votante.Identificacion" class="form-control" id="Identificacion" placeholder="Identificacion">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="FechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" ng-model="registro.votante.FechaNacimiento" class="form-control" id="FechaNacimiento" placeholder="Fecha de nacimiento">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Identificacion">Email</label>
+        <input type="email" ng-model="registro.votante.Email" class="form-control" id="Email" placeholder="Email">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="FechaNacimiento">Sexo</label>
+        <input type="text" ng-model="registro.votante.Sexo" class="form-control" id="Sexo" placeholder="Sexo">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Identificacion">Foto</label>
+        <input type="text" ng-model="registro.votante.Foto" class="form-control" id="Foto" placeholder="Foto">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="Contrasena">Contraseña</label>
+        <input type="password" ng-model="registro.votante.Contrasena" class="form-control" id="Contrasena" placeholder="Contraseña">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="ConfirmarContrasena">Confirmar contraseña</label>
+        <input type="password" ng-model="registro.votante.Contrasena" class="form-control" id="ConfirmarContrasena" placeholder="Confirmar contrasena">
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-default" ng-click="registro.volver()">Volver</button>
+  <button type="button" class="btn btn-default" ng-click="registro.guadarVotante()">Registrar</button>
+</form>
